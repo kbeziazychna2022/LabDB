@@ -1,5 +1,5 @@
-from source.db import PostgresDb
-from source.ormmodel import Base
+from Lab2.source.db import PostgresDb
+from Lab2.source.ormmodel import Base
 
 db = PostgresDb()
 

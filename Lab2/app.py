@@ -2,14 +2,14 @@ from flask import Flask, request, render_template, redirect, url_for
 import json
 import os
 from sqlalchemy import func
-from form.Queue import CreateQueue, EditQueue
-from source.db import PostgresDb
-from source.ormmodel import ormPlace, ormSchedule, ormClient, ormQueue
+from Lab2.form.Queue import CreateQueue, EditQueue
+from Lab2.source.db import PostgresDb
+from Lab2.source.ormmodel import ormPlace, ormSchedule, ormClient, ormQueue
 import plotly
 import plotly.graph_objs as go
-from form.Client import EditClient, CreateClient
-from form.Place import CreatePlace, EditPlace
-from form.Schedule import CreateSchedule, EditSchedule
+from Lab2.form.Client import EditClient, CreateClient
+from Lab2.form.Place import CreatePlace, EditPlace
+from Lab2.form.Schedule import CreateSchedule, EditSchedule
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:modern23@localhost/Kate'

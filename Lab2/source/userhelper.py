@@ -1,5 +1,5 @@
-from source.db import PostgresDb
-from source.ormmodel import ormPlace
+from Lab2.source.db import PostgresDb
+from Lab2.source.ormmodel import ormPlace
 
 
 class UserHelper:

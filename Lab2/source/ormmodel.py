@@ -1,8 +1,7 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, Date, ForeignKey, String, Time
-from sqlalchemy.orm import relationship
 
-from source.db import PostgresDb
+from Lab2.source.db import PostgresDb
 
 Base = declarative_base()
 
